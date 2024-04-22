@@ -1,0 +1,24 @@
+{
+  "plugins": ["unused-imports", "functional"],
+  "rules": {
+    "no-unused-vars": "off",
+    "no-var": "error",
+    "prefer-const": "error",
+    "prefer-arrow-callback": "error",
+    "no-param-reassign": "error",
+    "prefer-promise-reject-errors": "warn",
+    "no-return-assign": "error",
+    "prefer-template": "warn",
+    "no-multi-spaces": "error",
+    "space-in-parens": ["error", "always"],
+    "space-before-function-paren": ["error", "always"],
+    "space-before-blocks": ["error", "always"],
+    "array-bracket-spacing": ["error", "always"],
+    "object-curly-spacing": ["error", "always"],
+    "semi": ["error", "always"],
+    "keyword-spacing": ["error", { "before": true }],
+    "arrow-spacing": ["error", { "before": true, "after": true }],
+    "indent": ["error", "tab"],
+    "unused-imports/no-unused-imports": "error"
+  }
+}
