@@ -1,9 +1,9 @@
 {
   "name": "fastify-prisma-template",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "",
-  "scripts": {
-    "create": "node ./setup.js"
+  "bin": {
+    "create": "./setup.js"
   },
   "author": "machacjakub",
   "license": "ISC"

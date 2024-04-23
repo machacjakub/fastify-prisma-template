@@ -2,3 +2,7 @@
 # yarn lockfile v1
 
 
+fastify-prisma-template@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/fastify-prisma-template/-/fastify-prisma-template-1.0.2.tgz#26225750ee3eb7b88186b66795a6a96c66600a59"
+  integrity sha512-ltlLWkzCrZzgR+/3CvT7PvkM6lllFeM6alc2FSxX298mqR73GtvGMedvdkqobFvbFmFr9l5KXer1LB+iVZ6mtA==
