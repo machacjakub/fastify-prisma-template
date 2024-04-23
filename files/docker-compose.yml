@@ -6,6 +6,6 @@ services:
     command: "-c logging_collector=on"
     restart: always
     env_file:
-      - ./config/database.env
+      - config/database.env
     ports:
       - "5433:5432"

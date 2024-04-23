@@ -1,26 +1,10 @@
 {
-  "name": "the-api",
-  "version": "1.0.0",
+  "name": "fastify-prisma-template",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "dev": "yarn build && node build/index.js",
-    "migration:init": "prisma migrate dev"
+    "create": "node ./setup.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "fastify": "^4.26.2",
-    "prisma": "^5.12.1",
-    "typescript": "^5.4.5",
-    "@prisma/client": "5.12.1"
-  },
-  "devDependencies": {
-    "@types/node": "^20.12.7",
-    "eslint": "^8.1.0",
-    "eslint-plugin-functional": "^5.0.5",
-    "eslint-plugin-unused-imports": "^2.0.0"
-  }
+  "author": "machacjakub",
+  "license": "ISC"
 }
