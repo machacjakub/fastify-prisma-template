@@ -1,6 +1,7 @@
 const path = require('path');
+const fs = require('fs');
 function copyDirRecursive(source, destination, callback) {
-    const fs = require('fs');
+
 
     if (!fs.existsSync(destination)) {
         fs.mkdirSync(destination); // Create destination directory if it doesn't exist
@@ -26,4 +27,11 @@ function copyDirRecursive(source, destination, callback) {
     }
 }
 
-module.exports = copyDirRecursive;
+const addDot = (projectDir) => (fileName) => {
+    fs.renameSync(
+        path.join(projectDir, fileName),
+        path.join(projectDir, '.' + fileName)
+    );
+}
+
+module.exports = {copyDirRecursive, addDot};

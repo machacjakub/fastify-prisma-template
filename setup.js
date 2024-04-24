@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 const path = require('path');
-const copyDirRecursive = require("./utils");
+const {copyDirRecursive, addDot} = require("./utils");
 
 
-const source = path.join(__dirname, 'files');
+const source = path.join(__dirname, 'templateFiles');
 
 const projectName = process.argv[2];  // Get project name from the argument
 const projectDir = path.join(String(process.cwd()), String(projectName));
@@ -19,6 +19,7 @@ try {
     copyDirRecursive(source, projectDir, (sourcePath, destPath) => {
         console.log(`Copied file: ${sourcePath} to ${destPath}`);
     });
+    ['gitignore', 'env', 'eslintrc.json'].forEach(addDot(projectDir));
     console.log(`Project ${projectName} created successfully!`);
 } catch (err) {
     console.error(err);

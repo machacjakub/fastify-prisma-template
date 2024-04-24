@@ -1,5 +1,4 @@
 import Fastify from 'fastify';
-import {getConfig} from "./config";
 
 const fastify = Fastify({
     logger: true // Enable basic logging
@@ -17,7 +16,6 @@ const start = async () => {
         fastify.log.error(err);
         process.exit(1);
     }
-    console.log(getConfig());
     console.log('Server listening on port 3000');
 };
 
