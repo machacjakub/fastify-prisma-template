@@ -4,7 +4,7 @@ const path = require('path');
 const copyDirRecursive = require("./utils");
 
 
-const source = './files';
+const source = path.join(__dirname, 'files');
 
 const projectName = process.argv[2];  // Get project name from the argument
 const projectDir = path.join(String(process.cwd()), String(projectName));
