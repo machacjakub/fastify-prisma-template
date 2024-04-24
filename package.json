@@ -1,10 +1,11 @@
 {
   "name": "fastify-prisma-template",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "",
   "bin": {
     "create": "./setup.js"
   },
   "author": "machacjakub",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": ["fastify", "prisma", "template", "npx install"]
 }
