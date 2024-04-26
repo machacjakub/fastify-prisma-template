@@ -1,11 +1,14 @@
 {
   "name": "fastify-prisma-template",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "description": "",
   "bin": {
     "create": "./setup.js"
   },
   "author": "machacjakub",
   "license": "ISC",
-  "keywords": ["fastify", "prisma", "template", "npx install"]
+  "keywords": ["fastify", "prisma", "template", "npx install"],
+  "repository": "https://github.com/machacjakub/fastify-prisma-template",
+  "homepage": "https://github.com/machacjakub/fastify-prisma-template/blob/main/README.md",
+  "readme": "This template provides a basic foundation for starting a new Node.js project using Fastify and Prisma."
 }
